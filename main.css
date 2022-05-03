@@ -1,0 +1,98 @@
+:root {
+  --bgColor: #02021b;
+  --blueColor: #004471;
+  --purpleColor: #7e006b;
+  --redColor: #960037;
+  --greenColor: rgb(0, 231, 111);
+  --grayColor: rgb(154, 154, 154);
+  --whiteColor: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  transition: transform 1s ease-in-out;
+}
+body {
+  background-color: var(--whiteColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+.message {
+  background-color: var(--bgColor);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100vh);
+}
+.message-card i {
+  font-size: 3rem;
+  color: var(--redColor);
+}
+.card,
+.message-card {
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+.emoji {
+  transition: all 0.5s ease-in-out;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.emoji i {
+  font-size: 3rem;
+  color: var(--grayColor);
+}
+.emoji:hover,
+.emoji.active {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.text {
+  margin-top: 1rem;
+}
+.btn {
+  padding: 0.7rem 2rem;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--blueColor);
+  color: var(--blueColor);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--blueColor);
+  color: var(--whiteColor);
+}
+.btn:active {
+  transform: scale(0.9);
+}
